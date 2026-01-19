@@ -18,7 +18,7 @@ function App() {
     <Router>
       <SmoothScroll>
         <ScrollToTop />
-        <main className="relative min-h-screen w-full overflow-hidden bg-background text-foreground">
+        <main className="relative min-h-screen w-full bg-background text-foreground">
           <Routes>
             <Route path="/" element={<LandingPage />} />
 

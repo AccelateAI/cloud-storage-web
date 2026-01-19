@@ -34,7 +34,7 @@ export const TableOfContents = () => {
     }, [location.pathname]);
 
     return (
-        <nav className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-auto hidden lg:block w-64 pr-4">
+        <nav className="max-h-[calc(100vh-8rem)] overflow-auto pr-4">
             <h4 className="font-bold text-white mb-4 uppercase text-xs tracking-wider opacity-50">On this page</h4>
             <ul className="space-y-2 border-l border-white/10">
                 {headings.map((heading) => (

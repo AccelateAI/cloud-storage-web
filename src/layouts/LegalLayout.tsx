@@ -3,7 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { TableOfContents } from '../components/legal/TableOfContents';
 import { Header } from '../components/layout/Header';
 import { Footer } from '../components/layout/Footer';
-import { ChevronRight, Search, Printer, Shield, Flag } from 'lucide-react';
+import { ChevronRight, Printer, Shield, Flag } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { ViolationModal } from '../components/legal/ViolationModal';
 
@@ -41,21 +41,21 @@ export const LegalLayout = ({ children }: { children: React.ReactNode }) => {
                             <p className="text-gray-400">Last updated: December 26, 2025</p>
                         </div>
                         <div className="flex flex-wrap gap-3">
-                            <Button variant="outline" size="sm" onClick={() => window.print()}>
+                            {/* <Button variant="outline" size="sm" onClick={() => window.print()}>
                                 <Printer className="w-4 h-4 mr-2" />
                                 Print
-                            </Button>
+                            </Button> */}
                             <Button variant="ghost" size="sm" className="text-amber-500 hover:text-amber-400 hover:bg-amber-500/10" onClick={() => setIsModalOpen(true)}>
                                 <Flag className="w-4 h-4 mr-2" />
                                 Report
                             </Button>
                             <div className="relative">
-                                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+                                {/* <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
                                 <input
                                     type="text"
                                     placeholder="Search legal docs..."
                                     className="bg-white/5 border border-white/10 rounded-full pl-10 pr-4 py-2 text-sm text-white focus:outline-none focus:border-primary/50 w-full md:w-64"
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>
@@ -66,8 +66,8 @@ export const LegalLayout = ({ children }: { children: React.ReactNode }) => {
                 <div className="grid lg:grid-cols-[250px_1fr_250px] gap-12">
 
                     {/* Left Sidebar: Navigation */}
-                    <aside className="hidden lg:block">
-                        <nav className="sticky top-24 space-y-1">
+                    <aside className="hidden lg:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto">
+                        <nav className="space-y-1">
                             <h4 className="font-bold text-white mb-4 uppercase text-xs tracking-wider opacity-50">Legal Documents</h4>
                             {menuItems.map((item) => (
                                 <Link
@@ -97,7 +97,7 @@ export const LegalLayout = ({ children }: { children: React.ReactNode }) => {
                     </main>
 
                     {/* Right Sidebar: TOC */}
-                    <aside>
+                    <aside className="hidden lg:block sticky top-24 self-start max-h-[calc(100vh-8rem)] overflow-y-auto">
                         <TableOfContents />
                     </aside>
                 </div>
