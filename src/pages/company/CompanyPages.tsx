@@ -4,7 +4,7 @@ export const About = () => (
         <section>
             <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
             <p className="text-gray-300 leading-relaxed">
-                At Tenbox, we are on a mission to redefine digital ownership. We believe that your data belongs to you—not to corporations, not to advertisers, and certainly not to prying eyes. Our antigravity design philosophy isn't just aesthetic; it represents the weightlessness of true freedom in the cloud.
+                At Tenbox, we are on a mission to redefine digital ownership. We believe that your data belongs to you—not to corporations, not to advertisers, and certainly not to prying eyes.
             </p>
         </section>
         <section>

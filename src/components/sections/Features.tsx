@@ -96,7 +96,7 @@ export const Features = () => {
                         transition={{ delay: 0.1 }}
                         className="text-lg text-gray-400 max-w-2xl mx-auto"
                     >
-                        Everything you need to manage your digital life, packed into a beautiful antigravity interface.
+                        Everything you need to manage your digital life, packed into a beautiful tenbox interface.
                     </motion.p>
                 </div>
 

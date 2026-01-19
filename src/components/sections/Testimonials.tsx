@@ -6,7 +6,7 @@ const testimonials = [
     {
         name: "Sarah Chen",
         role: "Product Designer",
-        quote: "The antigravity interface isn't just a gimmick - it actually makes navigating deep folder structures intuitive and fun. Love it!",
+        quote: "The tenbox interface isn't just a gimmick - it actually makes navigating deep folder structures intuitive and fun. Love it!",
         rating: 5
     },
     {
