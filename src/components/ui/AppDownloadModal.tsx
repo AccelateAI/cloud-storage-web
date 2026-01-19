@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '../ui/Button';
-import { X, Smartphone } from 'lucide-react';
+import { X } from 'lucide-react';
+import QRCode from 'react-qr-code';
 
 interface AppDownloadModalProps {
     isOpen: boolean;
@@ -50,20 +51,22 @@ export const AppDownloadModal = ({ isOpen, onClose }: AppDownloadModalProps) => 
                                         </h4>
                                         <div className="bg-white p-3 rounded-xl shadow-lg relative cursor-pointer hover:scale-105 transition-transform group">
                                             {/* iOS Style QR */}
-                                            <div className="w-32 h-32 bg-gray-900 relative overflow-hidden">
-                                                <div className="absolute inset-0 flex items-center justify-center">
-                                                    <Smartphone className="w-10 h-10 text-white" />
-                                                </div>
-                                                {/* Corner markers */}
-                                                <div className="absolute top-2 left-2 w-8 h-8 border-t-4 border-l-4 border-white rounded-tl-lg" />
-                                                <div className="absolute top-2 right-2 w-8 h-8 border-t-4 border-r-4 border-white rounded-tr-lg" />
-                                                <div className="absolute bottom-2 left-2 w-8 h-8 border-b-4 border-l-4 border-white rounded-bl-lg" />
-                                                <div className="absolute bottom-2 right-2 w-8 h-8 border-b-4 border-r-4 border-white rounded-br-lg" />
-
-                                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[2px] bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)] animate-[scan_2s_linear_infinite]" />
+                                            <div className="bg-white p-2 rounded-lg">
+                                                <QRCode
+                                                    value="https://apps.apple.com"
+                                                    size={128}
+                                                    style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+                                                    level="L"
+                                                />
                                             </div>
                                         </div>
-                                        <Button className="w-full text-sm" size="sm">
+                                        <Button
+                                            className="w-full text-sm"
+                                            size="sm"
+                                            href="https://apps.apple.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             Download for iOS
                                         </Button>
                                     </div>
@@ -75,19 +78,23 @@ export const AppDownloadModal = ({ isOpen, onClose }: AppDownloadModalProps) => 
                                         </h4>
                                         <div className="bg-white p-3 rounded-xl shadow-lg relative cursor-pointer hover:scale-105 transition-transform group">
                                             {/* Android Style QR */}
-                                            <div className="w-32 h-32 bg-gray-900 relative overflow-hidden">
-                                                <div className="absolute inset-0 flex items-center justify-center">
-                                                    <Smartphone className="w-10 h-10 text-green-500" />
-                                                </div>
-                                                {/* Corner markers (Square style) */}
-                                                <div className="absolute top-2 left-2 w-6 h-6 border-4 border-white" />
-                                                <div className="absolute top-2 right-2 w-6 h-6 border-4 border-white" />
-                                                <div className="absolute bottom-2 left-2 w-6 h-6 border-4 border-white" />
-
-                                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[2px] bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.8)] animate-[scan_2s_linear_infinite_0.5s]" />
+                                            <div className="bg-white p-2 rounded-lg">
+                                                <QRCode
+                                                    value="https://play.google.com"
+                                                    size={128}
+                                                    style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+                                                    level="L"
+                                                />
                                             </div>
                                         </div>
-                                        <Button variant="secondary" className="w-full text-sm" size="sm">
+                                        <Button
+                                            variant="secondary"
+                                            className="w-full text-sm"
+                                            size="sm"
+                                            href="https://play.google.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             Download for Android
                                         </Button>
                                     </div>
