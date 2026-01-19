@@ -49,6 +49,16 @@ export const Privacy = () => {
                     We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above.
                 </p>
             </section>
+
+            <section id="account-deletion" className="mb-12">
+                <h2 id="account-deletion" className="text-2xl font-bold text-white mb-4">6. Account Deletion</h2>
+                <p className="mb-4">
+                    You may delete your account at any time. Upon deletion, your personal data and stored content will be permanently removed in accordance with our Privacy Policy, except where retention is required by law. We may suspend or terminate your account if you violate our Terms, misuse the Service, or fail to meet applicable obligations.
+                </p>
+                <p className="mb-4">
+                    <b>How to delete your account:</b> Access the main navigation menu from within the application at top-left corner, go into the <b>Profile</b> section, and click on <b>Delete Account</b>. Follow the on-screen instructions to confirm your request. Account deletion is permanent and irreversible.
+                </p>
+            </section>
         </>
     );
 };

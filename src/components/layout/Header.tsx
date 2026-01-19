@@ -50,7 +50,7 @@ export const Header = () => {
                 </nav>
 
                 <div className="hidden md:flex items-center gap-4">
-                    <Button variant="ghost" size="sm">Sign In</Button>
+
                     <Button size="sm" onClick={() => setIsDownloadModalOpen(true)}>Get App</Button>
                 </div>
 
@@ -81,8 +81,8 @@ export const Header = () => {
                             {item}
                         </a>
                     ))}
+
                     <div className="flex flex-col gap-2 mt-4">
-                        <Button variant="ghost" className="w-full justify-start">Sign In</Button>
                         <Button className="w-full" onClick={() => { setIsMobileMenuOpen(false); setIsDownloadModalOpen(true); }}>Get App</Button>
                     </div>
                 </motion.div>
