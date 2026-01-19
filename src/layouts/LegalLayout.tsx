@@ -3,7 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { TableOfContents } from '../components/legal/TableOfContents';
 import { Header } from '../components/layout/Header';
 import { Footer } from '../components/layout/Footer';
-import { ChevronRight, Printer, Shield, Flag } from 'lucide-react';
+import { ChevronRight, Shield, Flag } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { ViolationModal } from '../components/legal/ViolationModal';
 
