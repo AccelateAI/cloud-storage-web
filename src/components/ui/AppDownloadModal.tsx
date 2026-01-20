@@ -80,7 +80,7 @@ export const AppDownloadModal = ({ isOpen, onClose }: AppDownloadModalProps) => 
                                             {/* Android Style QR */}
                                             <div className="bg-white p-2 rounded-lg">
                                                 <QRCode
-                                                    value="https://play.google.com"
+                                                    value="https://play.google.com/store/apps/details?id=com.tenbox.app"
                                                     size={128}
                                                     style={{ height: "auto", maxWidth: "100%", width: "100%" }}
                                                     level="L"
@@ -91,7 +91,7 @@ export const AppDownloadModal = ({ isOpen, onClose }: AppDownloadModalProps) => 
                                             variant="secondary"
                                             className="w-full text-sm"
                                             size="sm"
-                                            href="https://play.google.com"
+                                            href="https://play.google.com/store/apps/details?id=com.tenbox.app"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
