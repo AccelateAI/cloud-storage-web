@@ -4,11 +4,12 @@ import { ScrollToTop } from './components/layout/ScrollToTop';
 import { LandingPage } from './pages/LandingPage';
 import { LegalLayout } from './layouts/LegalLayout';
 import { CompanyLayout } from './layouts/CompanyLayout';
-import { About, Blog, Careers, Contact } from './pages/company/CompanyPages';
+import { About, Blog, Careers, Contact, Help } from './pages/company/CompanyPages';
 import { Terms } from './pages/legal/Terms';
 import { Privacy } from './pages/legal/Privacy';
 import { DMCA } from './pages/legal/DMCA';
 import { Transparency } from './pages/legal/Transparency';
+import { Takedown } from './pages/legal/Takedown';
 
 
 
@@ -29,7 +30,9 @@ function App() {
                   <Route path="about" element={<About />} />
                   <Route path="blog" element={<Blog />} />
                   <Route path="careers" element={<Careers />} />
+                  <Route path="careers" element={<Careers />} />
                   <Route path="contact" element={<Contact />} />
+                  <Route path="help" element={<Help />} />
                 </Routes>
               </CompanyLayout>
             } />
@@ -42,6 +45,8 @@ function App() {
                   <Route path="privacy" element={<Privacy />} />
                   <Route path="dmca" element={<DMCA />} />
                   <Route path="transparency" element={<Transparency />} />
+                  <Route path="takedown" element={<Takedown />} />
+                  {/* Keep existing routes */}
                 </Routes>
               </LegalLayout>
             } />

@@ -38,12 +38,12 @@ export const Hero = () => {
                     <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                         <AnimatedText text="Tenbox," />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-                            <AnimatedText text="Defying Gravity" delay={0.2} />
+                            <AnimatedText text="Your Next-Gen Cloud" delay={0.2} />
                         </span>
                     </h1>
 
                     <p className="text-lg text-gray-400 max-w-lg">
-                        Break free from limits with the world's most advanced decentralized storage. Zero-knowledge encryption, lightning speeds, and a design that floats above the rest.
+                        Welcome to your next-generation cloud storage and file‑sharing space. Effortlessly store, protect, and share your digital life at scale with Tenbox.
                     </p>
 
                     <div className="flex items-center gap-4 mt-4">

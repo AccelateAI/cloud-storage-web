@@ -6,33 +6,33 @@ import { Card } from '../ui/Card';
 const features = [
     {
         icon: Database,
-        title: "Unlimited Storage",
-        description: "Store everything you need without worrying about limits. Our decentralized network scales with you."
+        title: "1024 GB Free Storage",
+        description: "Get 1 TB of free cloud storage, giving you room for up to 400,000 photos or tens of thousands of short videos at no cost."
     },
     {
         icon: Shield,
-        title: "Military-Grade Security",
-        description: "AES-256 encryption and zero-knowledge architecture ensure your data remains truly yours."
+        title: "Ironclad Security",
+        description: "Core design principles including encryption, access controls, and strict privacy policies protect your data at rest and in transit."
     },
     {
         icon: Zap,
-        title: "Real-time Sync",
-        description: "Changes reflect instantly across all your devices with our lightning-fast websocket protocol."
+        title: "Cross-Platform Access",
+        description: "A single account works across mobile apps, web, and desktop. Auto-backup files on mobile and share large files from PC."
     },
     {
         icon: Globe,
-        title: "Share Anywhere",
-        description: "Create secure, time-limited download links for anyone, even if they don't have an account."
+        title: "Simple Sharing",
+        description: "Quickly share files using links. Send large items to friends, family, or colleagues without email attachment limits."
     },
     {
         icon: GitBranch,
-        title: "Version Control",
-        description: "Go back in time. We keep infinite version history of your files, so you never lose work."
+        title: "Flexible Plans",
+        description: "From our generous free tier to premium options for heavy users who need long-term, large-scale storage."
     },
     {
         icon: Headphones,
-        title: "24/7 Support",
-        description: "Our dedicated team of cloud experts is always available to help you with any issues."
+        title: "Help & Support",
+        description: "Dedicated Help Center for premium membership, storage, backup, and account management assistance."
     }
 ];
 

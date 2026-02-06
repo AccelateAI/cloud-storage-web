@@ -49,7 +49,8 @@ export const Footer = () => {
                                 { label: 'About', path: '/company/about' },
                                 { label: 'Blog', path: '/company/blog' },
                                 { label: 'Careers', path: '/company/careers' },
-                                { label: 'Contact', path: '/company/contact' }
+                                { label: 'Contact', path: '/company/contact' },
+                                { label: 'Help Center', path: '/company/help' }
                             ].map((item) => (
                                 <li key={item.path}>
                                     <Link to={item.path} className="text-gray-400 hover:text-primary transition-colors text-sm">{item.label}</Link>

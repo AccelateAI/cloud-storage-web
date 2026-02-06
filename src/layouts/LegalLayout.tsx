@@ -18,6 +18,7 @@ export const LegalLayout = ({ children }: { children: React.ReactNode }) => {
         { path: '/legal/privacy', label: 'Privacy Policy' },
         { path: '/legal/dmca', label: 'DMCA Policy' },
         { path: '/legal/transparency', label: 'Transparency' },
+        { path: '/legal/takedown', label: 'Takedown Guidance' },
     ];
 
     return (

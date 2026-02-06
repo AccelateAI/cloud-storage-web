@@ -1,37 +1,40 @@
 export const DMCA = () => {
     return (
         <>
-            <section id="notice" className="mb-12">
-                <h2 id="notice" className="text-2xl font-bold text-white mb-4">1. DMCA Notice</h2>
-                <p className="mb-4">
-                    Tenbox respects the intellectual property rights of others. It is our policy to respond to any claim that Content posted on the Service infringes on the copyright or other intellectual property rights ("Infringement") of any person or entity.
-                </p>
-                <p className="mb-4">
-                    If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied in a way that constitutes copyright infringement, please submit your claim via email to dmca@tenbox.com, with the subject line: "Copyright Infringement" and include in your claim a detailed description of the alleged Infringement as detailed below, under "DMCA Notice and Procedure for Copyright Infringement Claims".
-                </p>
-            </section>
+            <section id="introduction" className="mb-12">
+                <h2 id="copyright-and-dmca-policy" className="text-2xl font-bold text-white mb-4">Copyright and DMCA Policy</h2>
 
-            <section id="procedure" className="mb-12">
-                <h2 id="procedure" className="text-2xl font-bold text-white mb-4">2. Procedure for Claims</h2>
-                <p className="mb-4">
-                    You may be held accountable for damages (including costs and attorneys' fees) for misrepresentation or bad-faith claims on the infringement of any Content found on and/or through the Service on your copyright.
+                <h3 id="1-respect-for-intellectual-property" className="text-xl font-semibold text-white mb-3">1. Respect for Intellectual Property</h3>
+                <p className="mb-4 text-gray-300">
+                    Tenbox respects the intellectual property rights of others and expects users to do the same. The Service must not be used to upload, store, or share content that infringes copyright or other intellectual property rights.
                 </p>
-                <p className="mb-4">
-                    To be effective, the notification must be a written communication that includes the following:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 mb-4 text-gray-300">
-                    <li>An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright's interest</li>
-                    <li>A description of the copyrighted work that you claim has been infringed</li>
-                    <li>A description of where the material that you claim is infringing is located on the Service</li>
-                    <li>Your address, telephone number, and email address</li>
-                    <li>A statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law</li>
-                </ul>
-            </section>
 
-            <section id="counter-notice" className="mb-12">
-                <h2 id="counter-notice" className="text-2xl font-bold text-white mb-4">3. Counter-Notice</h2>
-                <p className="mb-4">
-                    If you believe that your Content that was removed (or to which access was disabled) is not infringing, or that you have the authorization from the copyright owner, the copyright owner's agent, or pursuant to the law, to post and use the material in your Content, you may send a counter-notice containing the following information to our Copyright Agent.
+                <h3 id="2-submitting-a-copyright-notice" className="text-xl font-semibold text-white mb-3">2. Submitting a Copyright/DMCA Notice</h3>
+                <p className="mb-4 text-gray-300">
+                    If you are a copyright owner or are authorized to act on behalf of one, and you believe that content available through the Service infringes your copyright, you may submit a notice of alleged infringement containing the following information, consistent with the Digital Millennium Copyright Act (DMCA) and similar laws:
+                </p>
+                <ol className="list-decimal pl-6 space-y-2 mb-4 text-gray-300">
+                    <li>Your physical or electronic signature.</li>
+                    <li>Identification of the copyrighted work claimed to have been infringed (or a representative list if multiple works are involved).</li>
+                    <li>Identification of the material that is claimed to be infringing or the subject of infringing activity and that is to be removed or disabled, together with information reasonably sufficient to permit Tenbox to locate the material (such as specific URLs).</li>
+                    <li>Your contact information, including full name, mailing address, telephone number, and, if available, email address.</li>
+                    <li>A statement that you have a good‑faith belief that the use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law.</li>
+                    <li>A statement that the information in the notice is accurate and, under penalty of perjury, that you are the copyright owner or are authorized to act on the owner’s behalf.</li>
+                </ol>
+                <p className="mb-4 text-gray-300">
+                    Tenbox will provide a designated email address for such notices.
+                </p>
+
+                <h3 id="3-action-on-valid-notices" className="text-xl font-semibold text-white mb-3">3. Action on Valid Notices and Repeat Infringers</h3>
+                <ol className="list-decimal pl-6 space-y-2 mb-4 text-gray-300">
+                    <li>Upon receiving a valid and complete notice, Tenbox will take appropriate action at its sole discretion, which may include removing or disabling access to the allegedly infringing material.</li>
+                    <li>Tenbox may also, where appropriate, terminate or suspend Accounts associated with repeated or severe infringement, consistent with its obligations under applicable law and its internal policies.</li>
+                    <li>Tenbox may, but is not obliged to, notify the user who uploaded the challenged content, consistent with applicable law and safety considerations.</li>
+                </ol>
+
+                <h3 id="4-updates-to-policy" className="text-xl font-semibold text-white mb-3">4. Updates to This Policy</h3>
+                <p className="mb-4 text-gray-300">
+                    This Copyright and DMCA Policy may be updated from time to time, with updated versions posted on the Website. Continued use of the Service after changes become effective constitutes acceptance of the updated Policy.
                 </p>
             </section>
         </>
