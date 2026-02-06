@@ -60,7 +60,8 @@ export const Footer = () => {
                                 { label: 'Privacy', path: '/legal/privacy' },
                                 { label: 'Terms', path: '/legal/terms' },
                                 { label: 'DMCA', path: '/legal/dmca' },
-                                { label: 'Transparency', path: '/legal/transparency' }
+                                { label: 'Transparency', path: '/legal/transparency' },
+                                { label: 'Takedown', path: '/legal/takedown' }
                             ].map((item) => (
                                 <li key={item.path}>
                                     <Link to={item.path} className="text-gray-400 hover:text-primary transition-colors text-sm">
