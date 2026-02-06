@@ -6,8 +6,8 @@ import { Card } from '../ui/Card';
 const features = [
     {
         icon: Database,
-        title: "1024 GB Free Storage",
-        description: "Get 1 TB of free cloud storage, giving you room for up to 400,000 photos or tens of thousands of short videos at no cost."
+        title: "10 GB Free Storage",
+        description: "Get 10 GB of free cloud storage, giving you room for up to 2000 photos or 1000 short videos at no cost."
     },
     {
         icon: Shield,

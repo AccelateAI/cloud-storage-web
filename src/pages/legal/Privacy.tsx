@@ -109,7 +109,15 @@ export const Privacy = () => {
                     Tenbox stores and processes personal data primarily in secure data centers and may transfer data internationally where necessary, relying on mechanisms aligned with GDPR principles (for example, appropriate safeguards, consent, or other lawful bases).
                 </p>
 
-                <h3 id="6-security-and-retention" className="text-xl font-semibold text-white mb-3">6. Security and Retention</h3>
+                <h3 id="6-account-deletion" className="text-xl font-semibold text-white mb-3">6. Account Deletion</h3>
+                <p className="mb-4 text-gray-300">
+                    You may delete your account at any time. Upon deletion, your personal data and stored content will be permanently removed in accordance with our Privacy Policy, except where retention is required by law. We may suspend or terminate your account if you violate our Terms, misuse the Service, or fail to meet applicable obligations.
+                </p>
+                <p className="mb-4 text-gray-300">
+                    <b>How to delete your account:</b> Access the main navigation menu from within the application at top-left corner, go into the <b>Profile</b> section, and click on <b>Delete Account</b>. Follow the on-screen instructions to confirm your request. Account deletion is permanent and irreversible.
+                </p>
+
+                <h3 id="7-security-and-retention" className="text-xl font-semibold text-white mb-3">7. Security and Retention</h3>
                 <p className="mb-4 text-gray-300">
                     Security measures include:
                 </p>
@@ -127,7 +135,7 @@ export const Privacy = () => {
                     If you request account deletion, the account is deleted after verifying your identity, subject to any mandatory legal retention and technical constraints on immediate removal from backups.
                 </p>
 
-                <h3 id="7-your-rights" className="text-xl font-semibold text-white mb-3">7. Your Rights</h3>
+                <h3 id="8-your-rights" className="text-xl font-semibold text-white mb-3">8. Your Rights</h3>
                 <p className="mb-4 text-gray-300">
                     Depending on your jurisdiction, you may have rights to:
                 </p>
@@ -142,7 +150,7 @@ export const Privacy = () => {
                     Requests can be submitted via the specified email address and in‑product tools.
                 </p>
 
-                <h3 id="8-changes-and-contact" className="text-xl font-semibold text-white mb-3">8. Changes and Contact</h3>
+                <h3 id="9-changes-and-contact" className="text-xl font-semibold text-white mb-3">9. Changes and Contact</h3>
                 <p className="mb-4 text-gray-300">
                     The Privacy Policy may be updated from time to time. The latest version is published on the official site, and material changes that affect your rights trigger appropriate notification. For any questions or concerns, users are instructed to contact the official helpdesk email.
                 </p>

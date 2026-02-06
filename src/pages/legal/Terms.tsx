@@ -73,7 +73,7 @@ export const Terms = () => {
 
                 <h3 id="6-subscription-storage-upgrades" className="text-xl font-semibold text-white mb-3">6. Subscription Storage Upgrades & Paid Features</h3>
                 <p className="mb-4 text-gray-300">
-                    The Services offer free storage and optional paid upgrades. For Tenbox, free users receive 1 TB of storage, while paid plans unlock additional capacity and premium features. Key points:
+                    The Services offer free storage and optional paid upgrades. For Tenbox, free users receive 10 GB of storage, while paid plans unlock additional capacity and premium features. Key points:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 mb-4 text-gray-300">
                     <li>Paid features and storage are available on subscription or other billing cycles.</li>

@@ -1,156 +1,205 @@
 
-export const About = () => (
-    <div className="space-y-16 lg:space-y-24">
-        {/* 1. Hero / Headline */}
-        <section className="text-center max-w-4xl mx-auto pt-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-                We Are Tenbox. <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                    Storage That Defies Gravity.
-                </span>
-            </h1>
-            <p className="text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
-                Secure, high-capacity cloud storage designed to connect your digital life—from your smartphone to your living room.
-            </p>
-        </section>
+import { useState } from 'react';
+import { AppDownloadModal } from '../../components/ui/AppDownloadModal';
 
-        {/* 2. Who We Are */}
-        <section className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 className="text-3xl font-bold text-white mb-6">Who We Are</h2>
-                <div className="space-y-4 text-gray-300 leading-relaxed">
-                    <p>
-                        Tenbox is a forward-thinking cloud storage provider committed to making digital freedom accessible to everyone. We offer a secure and convenient home for your data, starting with an industry-leading <strong>1024 GB (1 TB) of free storage</strong>.
-                    </p>
-                    <p>
-                        Our journey took a major leap forward in November 2021 through a strategic collaboration with <strong>Pixela Corporation</strong>. Together, we introduced seamless cloud storage services for "Xit AirBox" and "Xit Base" TV tuners, enabling cloud recording of TV programs.
-                    </p>
-                    <p>
-                        This partnership reflects our core belief: high-capacity cloud storage acts as the essential bridge connecting traditional media, television, and the internet in our increasingly diverse digital lives.
-                    </p>
-                </div>
-            </div>
-            <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-white/5 shadow-2xl">
-                <blockquote className="text-lg text-gray-300 italic mb-6">
-                    "We will continue our efforts to offer convenient services, aiming to enhance everyone's comfort in their daily lives."
-                </blockquote>
-                <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">T</div>
-                    <div>
-                        <div className="font-bold text-white">The Tenbox Team</div>
-                        <div className="text-xs text-primary">Global Innovators</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+export const About = () => {
+    const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
 
-        {/* 3. Our Mission */}
-        <section className="bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                To provide a secure, convenient, and massive storage ecosystem that empowers everyone to capture, save, and share their world—without limits. We believe your data should be safe, accessible, and truly yours.
-            </p>
-        </section>
+    return (
+        <div className="space-y-16 lg:space-y-24">
+            {/* 1. Hero / Headline */}
+            <section className="text-center max-w-5xl mx-auto pt-12">
+                <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight leading-tight">
+                    Storage That <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-500">
+                        Defies Gravity.
+                    </span>
+                </h1>
+                <p className="text-xl md:text-2xl text-gray-400 leading-relaxed max-w-3xl mx-auto font-light">
+                    We are building the next generation of cloud storage. Beautiful, secure, and weightless.
+                </p>
+            </section>
 
-        {/* 4. What We Do */}
-        <section>
-            <h2 className="text-3xl font-bold text-white mb-10 text-center">What We Do</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-                <div className="p-6 rounded-xl bg-slate-900 border border-white/5 hover:border-primary/50 transition-colors">
-                    <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                        <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Massive Cloud Storage</h3>
-                    <p className="text-gray-400">
-                        We give every user 1 TB of free space. That's enough for 400,000 photos, 2,500 movies, or millions of documents.
-                    </p>
-                </div>
-                <div className="p-6 rounded-xl bg-slate-900 border border-white/5 hover:border-primary/50 transition-colors">
-                    <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                        <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Seamless Connection</h3>
-                    <p className="text-gray-400">
-                        From mobile backups to our TV tuner integration, we build bridges between your devices so your content flows freely.
-                    </p>
-                </div>
-                <div className="p-6 rounded-xl bg-slate-900 border border-white/5 hover:border-primary/50 transition-colors">
-                    <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                        <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Community Rewards</h3>
-                    <p className="text-gray-400">
-                        Our Referral Program allows users to earn real income. Many of our partners earn substantial returns simply by sharing efficient tools.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        {/* 5. How We Are Different */}
-        <section className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
+            {/* 2. Who We Are */}
+            <section className="grid md:grid-cols-2 gap-16 items-center">
                 <div className="space-y-6">
-                    <div className="bg-white/5 p-4 rounded-lg border border-white/5">
-                        <p className="text-gray-300 text-sm mb-2">Renji Kobayashi, Referral Program User</p>
-                        <p className="text-white italic">"Up to now, I’ve earned over $2000... which has made a significant difference for my family and me."</p>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                        Who We Are
                     </div>
-                    <div className="bg-white/5 p-4 rounded-lg border border-white/5">
-                        <p className="text-gray-300 text-sm mb-2">Jamaluddin Nasution, Student</p>
-                        <p className="text-white italic">"Tenbox has been a game-changer... I can now seamlessly store and share all my lecture notes, research papers, and group project files."</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white">Architects of Digital Freedom</h2>
+                    <div className="space-y-6 text-lg text-gray-300 leading-relaxed font-light">
+                        <p>
+                            Tenbox isn't just another digital locker. We are a collective of engineers, designers, and privacy advocates who believe that <strong>your data belongs to you</strong>.
+                        </p>
+                        <p>
+                            In a world where data is mined, sold, and scanned, we provide a sanctuary. We built Tenbox on the principle of <strong>Zero-Knowledge</strong> architecture—meaning we can't see your files even if we wanted to. We are restoring privacy to the cloud, without sacrificing the seamless experience you expect.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div className="order-1 md:order-2">
-                <h2 className="text-3xl font-bold text-white mb-6">How We Are Different</h2>
-                <ul className="space-y-4">
-                    <li className="flex gap-3">
-                        <span className="text-primary font-bold">01.</span>
-                        <span className="text-gray-300"><strong>Unmatched Generosity:</strong> While others offer 15GB, we offer 1024GB. We believe space shouldn't be a luxury.</span>
-                    </li>
-                    <li className="flex gap-3">
-                        <span className="text-primary font-bold">02.</span>
-                        <span className="text-gray-300"><strong>User-Centric Growth:</strong> We grow when you succeed. Our unique referral program turns users into partners.</span>
-                    </li>
-                    <li className="flex gap-3">
-                        <span className="text-primary font-bold">03.</span>
-                        <span className="text-gray-300"><strong>Zero-Knowledge Security:</strong> We prioritize your privacy with encryption that ensures only you hold the keys to your data.</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        {/* 6. Our Values */}
-        <section>
-            <h2 className="text-3xl font-bold text-white mb-10 text-center">Our Values</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {[
-                    { title: 'Security', desc: 'Your data is yours. We protect it with banking-grade encryption.' },
-                    { title: 'Innovation', desc: 'Connecting TVs, phones, and computers in new ways.' },
-                    { title: 'Accessibility', desc: 'Providing tools that are easy to use for everyone, everywhere.' },
-                    { title: 'Transparency', desc: 'Open about our policies, clear about our mission.' }
-                ].map((val, i) => (
-                    <div key={i} className="bg-white/5 p-6 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
-                        <h3 className="font-bold text-white mb-2">{val.title}</h3>
-                        <p className="text-sm text-gray-400">{val.desc}</p>
+                <div className="relative group">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-sky-500/20 to-purple-500/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-700" />
+                    <div className="relative bg-slate-900/90 backdrop-blur-xl p-10 rounded-3xl border border-white/10 shadow-2xl">
+                        <blockquote className="text-2xl font-medium text-white mb-8 leading-snug">
+                            "The cloud shouldn't be a compromise between convenience and privacy. We built Tenbox so you can have both."
+                        </blockquote>
+                        <div className="flex items-center gap-4 border-t border-white/5 pt-6">
+                            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-white to-gray-400 flex items-center justify-center text-black font-bold text-xl">T</div>
+                            <div>
+                                <div className="font-bold text-white">The Tenbox Team</div>
+                                <div className="text-sm text-gray-400">Founded 2024</div>
+                            </div>
+                        </div>
                     </div>
-                ))}
-            </div>
-        </section>
+                </div>
+            </section>
 
-        {/* 8. Call to Action */}
-        <section className="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Start Your Journey with Tenbox</h2>
-            <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-                Join millions of users who have switched to a smarter, larger, and safer cloud. Claim your 1024 GB of free storage today.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-100 transition-colors shadow-lg">
-                    Get 1TB Free Storage
-                </button>
-            </div>
-        </section>
-    </div>
-);
+            {/* 3. Our Mission */}
+            <section className="bg-gradient-to-b from-white/5 to-transparent rounded-[2.5rem] p-8 md:p-20 border border-white/5 text-center relative overflow-hidden">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-primary/10 blur-[100px] rounded-full pointer-events-none" />
+
+                <h2 className="text-3xl font-bold text-white mb-8 relative z-10">Our Mission</h2>
+                <p className="text-2xl md:text-3xl text-white/90 max-w-4xl mx-auto leading-relaxed font-light relative z-10">
+                    To create a digital ecosystem that is <span className="text-sky-400 font-medium">limitless</span> by design. We empower you to capture every memory and share every idea without worrying about storage quotas or surveillance.
+                </p>
+            </section>
+
+            {/* 4. What We Do */}
+            <section>
+                <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div>
+                        <h2 className="text-3xl font-bold text-white mb-2">What We Do</h2>
+                        <p className="text-gray-400">Redefining the standards of personal cloud storage.</p>
+                    </div>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-6">
+                    {[
+                        {
+                            title: "Storage Without Limits",
+                            desc: "We start every user with 10 GB of free space. Because your creativity shouldn't be capped by a paywall.",
+                            icon: (
+                                <svg className="w-6 h-6 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                            )
+                        },
+                        {
+                            title: "Invisible Security",
+                            desc: "Our encryption works in the background. You get banking-grade security without needing a degree in cryptography.",
+                            icon: (
+                                <svg className="w-6 h-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                            )
+                        },
+                        {
+                            title: "Seamless Ecosystem",
+                            desc: "A unified experience across web, mobile, and desktop. Your files flow like water between your devices.",
+                            icon: (
+                                <svg className="w-6 h-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>
+                            )
+                        }
+                    ].map((item, i) => (
+                        <div key={i} className="group p-8 rounded-3xl bg-slate-900 border border-white/5 hover:border-white/20 hover:bg-white/5 transition-all duration-300">
+                            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                {item.icon}
+                            </div>
+                            <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                            <p className="text-gray-400 leading-relaxed">
+                                {item.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* 5. How We Are Different */}
+            <section className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="order-2 lg:order-1">
+                    <div className="grid gap-6">
+                        <div className="bg-gradient-to-r from-slate-900 to-slate-800 p-8 rounded-2xl border border-white/10 transform hover:-translate-y-1 transition-transform duration-300">
+                            <div className="text-sky-400 text-sm font-bold tracking-wider uppercase mb-2">The Standard</div>
+                            <div className="text-2xl font-bold text-white mb-1">Data Scanned</div>
+                            <div className="text-gray-500 text-sm">Used for Ads</div>
+                        </div>
+                        <div className="bg-gradient-to-r from-primary/20 to-secondary/20 p-8 rounded-2xl border border-primary/20 transform hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+                            <div className="absolute top-0 right-0 p-3 opacity-20">
+                                <svg className="w-24 h-24 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" /></svg>
+                            </div>
+                            <div className="text-primary text-sm font-bold tracking-wider uppercase mb-2">The Tenbox Way</div>
+                            <div className="text-2xl font-bold text-white mb-1">Zero-Knowledge</div>
+                            <div className="text-primary/80 text-sm">Encrypted & Private</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="order-1 lg:order-2">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Built Different.</h2>
+                    <div className="space-y-6 text-gray-300 text-lg font-light leading-relaxed">
+                        <p>
+                            Most cloud providers treat storage as a utility—boring, restrictive, and expensive. We treat it as an experience.
+                        </p>
+                        <p>
+                            We’re distinct because we put <strong>Design</strong> and <strong>Generosity</strong> first. We don’t hide our best features behind a paywall, and we don’t compromise on aesthetics. Tenbox is built for those who appreciate software that feels as good as it looks.
+                        </p>
+                        <ul className="space-y-3 mt-4">
+                            {[
+                                'Zero-Knowledge Privacy by Default',
+                                'Beautiful, Fluid User Interface',
+                                'Generous 10 GB Free Tier for Everyone'
+                            ].map((item, i) => (
+                                <li key={i} className="flex items-center gap-3 text-white font-medium">
+                                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center">
+                                        <svg className="w-4 h-4 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
+                                    </div>
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            {/* 6. Our Values */}
+            <section>
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold text-white mb-4">Our Core Values</h2>
+                    <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
+                </div>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+                    {[
+                        { title: 'Privacy First', desc: 'We engineer our systems so that we cannot see your data. Trust through code, not promises.' },
+                        { title: 'Radical Simplicity', desc: 'Powerful technology shouldn’t be complicated. We obsess over every pixel.' },
+                        { title: 'Community Driven', desc: 'We grow with you. Our features are built based on what our users actually need.' },
+                        { title: 'Transparency', desc: 'Open roadmaps, clear policies, and honest communication. No fine print traps.' }
+                    ].map((val, i) => (
+                        <div key={i} className="p-6 md:p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.05] transition-colors text-center">
+                            <h3 className="text-lg font-bold text-white mb-3">{val.title}</h3>
+                            <p className="text-sm text-gray-400 leading-relaxed">{val.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* 8. Call to Action */}
+            <section className="relative rounded-[2.5rem] overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-90" />
+                <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
+
+                <div className="relative z-10 p-12 md:p-24 text-center">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready for Lift Off?</h2>
+                    <p className="text-white/90 text-xl mb-10 max-w-2xl mx-auto font-light">
+                        Join the thousands of users who have already upgraded their digital life.
+                        Experience the cloud, elevated.
+                    </p>
+                    <button
+                        onClick={() => setIsDownloadModalOpen(true)}
+                        className="px-10 py-5 bg-white text-black text-lg font-bold rounded-full hover:bg-gray-100 hover:scale-105 transition-all shadow-2xl shadow-black/20"
+                    >
+                        Claim Your 10 GB Free
+                    </button>
+                </div>
+            </section>
+            <AppDownloadModal isOpen={isDownloadModalOpen} onClose={() => setIsDownloadModalOpen(false)} />
+        </div>
+    );
+};
 
 export const Blog = () => (
     <div className="space-y-12">
@@ -243,7 +292,7 @@ export const Help = () => {
 
                     <div className="bg-white/5 p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
                         <h3 className="text-xl font-bold text-white mb-3">Storage & Backup</h3>
-                        <p className="text-gray-400 mb-4">Guides on how automatic backup works, managing your 1TB free storage, and what happens if your plan expires.</p>
+                        <p className="text-gray-400 mb-4">Guides on how automatic backup works, managing your 10 GB free storage, and what happens if your plan expires.</p>
                         <ul className="text-sm text-gray-500 space-y-1">
                             <li>• Automatic Phone Backup</li>
                             <li>• Managing Large Files</li>
