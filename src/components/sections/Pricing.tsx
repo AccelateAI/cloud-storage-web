@@ -8,7 +8,7 @@ const plans = [
     {
         name: "Free",
         price: { monthly: 0, annual: 0 },
-        features: ["5GB Secure Storage", "Basic Sharing", "2 Devices", "Community Support"],
+        features: ["10GB Secure Storage", "Basic Sharing", "2 Devices", "Community Support"],
         cta: "Start Free",
         popular: false
     },
