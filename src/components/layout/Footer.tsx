@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Cloud, Github, Twitter, Linkedin, Disc as Discord } from 'lucide-react';
+import { Cloud } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 export const Footer = () => {
@@ -18,13 +18,7 @@ export const Footer = () => {
                         <p className="text-gray-400 mb-6 max-w-sm">
                             Experience storage that defies gravity. Tenbox combines zero-knowledge security with a beautiful, weightless interface designed to elevate your digital life.
                         </p>
-                        <div className="flex gap-4">
-                            {[Github, Twitter, Linkedin, Discord].map((Icon, i) => (
-                                <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-white/10 hover:text-white transition-colors">
-                                    <Icon className="w-5 h-5" />
-                                </a>
-                            ))}
-                        </div>
+
                     </div>
 
                     <div>

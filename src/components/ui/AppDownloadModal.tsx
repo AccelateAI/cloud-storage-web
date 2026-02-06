@@ -53,7 +53,7 @@ export const AppDownloadModal = ({ isOpen, onClose }: AppDownloadModalProps) => 
                                             {/* iOS Style QR */}
                                             <div className="bg-white p-2 rounded-lg">
                                                 <QRCode
-                                                    value="https://apps.apple.com"
+                                                    value="https://apps.apple.com/us/app/tenbox-secure-cloud-storage/id6758333891"
                                                     size={128}
                                                     style={{ height: "auto", maxWidth: "100%", width: "100%" }}
                                                     level="L"
@@ -63,7 +63,7 @@ export const AppDownloadModal = ({ isOpen, onClose }: AppDownloadModalProps) => 
                                         <Button
                                             className="w-full text-sm"
                                             size="sm"
-                                            href="https://apps.apple.com"
+                                            href="https://apps.apple.com/us/app/tenbox-secure-cloud-storage/id6758333891"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
