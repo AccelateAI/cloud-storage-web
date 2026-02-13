@@ -114,7 +114,7 @@ export const Privacy = () => {
                     You may delete your account at any time. Upon deletion, your personal data and stored content will be permanently removed in accordance with our Privacy Policy, except where retention is required by law. We may suspend or terminate your account if you violate our Terms, misuse the Service, or fail to meet applicable obligations.
                 </p>
                 <p className="mb-4 text-gray-300">
-                    <b>How to delete your account:</b> Access the main navigation menu from within the application at top-left corner, go into the <b>Profile</b> section, and click on <b>Delete Account</b>. Follow the on-screen instructions to confirm your request. Account deletion is permanent and irreversible.
+                    <b>How to delete your account:</b> Access the main navigation menu from within the application at bottom navigation bar, tap on last icon which is <b>Profile</b> icon, and click on <b>Delete Account</b>. Follow the on-screen instructions to confirm your request. Account deletion is permanent and irreversible.
                 </p>
 
                 <h3 id="7-security-and-retention" className="text-xl font-semibold text-white mb-3">7. Security and Retention</h3>
