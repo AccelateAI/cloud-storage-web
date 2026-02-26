@@ -39,7 +39,8 @@ export const Header = () => {
                     </Link>
 
                     <nav className="hidden md:flex items-center gap-8">
-                        {['Features', 'How it Works', 'Pricing', 'Security'].map((item) => (
+                        {/* {['Features', 'How it Works', 'Pricing', 'Security'].map */}
+                        {['Features', 'How it Works', 'Security'].map((item) => (
                             <a
                                 key={item}
                                 href={`/#${item.toLowerCase().replace(/\s+/g, '-')}`}
@@ -72,7 +73,8 @@ export const Header = () => {
                         exit={{ opacity: 0, y: -20 }}
                         className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-white/10 p-4 md:hidden flex flex-col gap-4"
                     >
-                        {['Features', 'How it Works', 'Pricing', 'Security'].map((item) => (
+                        {/* {['Features', 'How it Works', 'Pricing', 'Security'].map */}
+                        {['Features', 'How it Works', 'Security'].map((item) => (
                             <a
                                 key={item}
                                 href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}

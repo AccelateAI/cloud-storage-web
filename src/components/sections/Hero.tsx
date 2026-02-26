@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import { AppDownloadModal } from '../ui/AppDownloadModal';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Button } from '../ui/Button';
 import { AnimatedText } from '../ui/AnimatedText';
@@ -6,6 +7,7 @@ import { FloatingParticles } from '../ui/FloatingParticles';
 import { Shield, HardDrive, Users, FileText, Folder, File } from 'lucide-react';
 
 export const Hero = () => {
+    const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
     const { scrollY } = useScroll();
 
@@ -50,17 +52,14 @@ export const Hero = () => {
                         <Button
                             size="lg"
                             className="shadow-[0_0_30px_rgba(14,165,233,0.3)]"
-                            onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-                        >
-                            Start Free
-                        </Button>
-                        <Button
+                            onClick={() => setIsDownloadModalOpen(true)}>Start Free</Button>
+                        {/* <Button
                             variant="secondary"
                             size="lg"
                             onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
                         >
                             Watch Demo
-                        </Button>
+                        </Button> */}
                     </div>
 
                     <div className="flex items-center gap-8 mt-12 pt-8 border-t border-white/10">
@@ -169,6 +168,7 @@ export const Hero = () => {
 
                 </motion.div>
             </div>
+            <AppDownloadModal isOpen={isDownloadModalOpen} onClose={() => setIsDownloadModalOpen(false)} />
         </section>
     );
 };

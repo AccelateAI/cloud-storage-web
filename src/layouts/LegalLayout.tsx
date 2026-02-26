@@ -87,7 +87,7 @@ export const LegalLayout = ({ children }: { children: React.ReactNode }) => {
                                 <Shield className="w-8 h-8 text-primary mb-3" />
                                 <h5 className="font-bold text-white text-sm mb-1">Need help?</h5>
                                 <p className="text-xs text-gray-400 mb-3">Contact our legal team for specific inquiries.</p>
-                                <a href="mailto:legal@tenbox.com" className="text-xs text-primary hover:underline">legal@tenbox.com</a>
+                                <a href="mailto:support@tenbox.app" className="text-xs text-primary hover:underline">support@tenbox.app</a>
                             </div>
                         </nav>
                     </aside>

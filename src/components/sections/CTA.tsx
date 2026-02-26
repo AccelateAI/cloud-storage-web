@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { AppDownloadModal } from '../ui/AppDownloadModal';
 import { Button } from '../ui/Button';
 
 export const CTA = () => {
+    const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
     return (
         <section className="py-24 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-purple-900/40" />
@@ -51,14 +54,15 @@ export const CTA = () => {
                     transition={{ delay: 0.2 }}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
-                    <Button size="lg" className="shadow-lg shadow-primary/25 min-w-[150px]">
+                    <Button size="lg" className="shadow-lg shadow-primary/25 min-w-[150px]" onClick={() => setIsDownloadModalOpen(true)}>
                         Get Started Free
                     </Button>
-                    <Button variant="outline" size="lg" className="min-w-[150px]">
+                    {/* <Button variant="outline" size="lg" className="min-w-[150px]">
                         Contact Sales
-                    </Button>
+                    </Button> */}
                 </motion.div>
             </div>
+            <AppDownloadModal isOpen={isDownloadModalOpen} onClose={() => setIsDownloadModalOpen(false)} />
         </section>
     );
 };
